@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="author" content="Video Rating Site">
+    <meta name="language" content="english">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="Video Rating Site">
+    <meta property="og:type"  content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Video Rating Site">
+
+    <title>Video Rating Site</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <video controls width="320" height="240">
+      <source src="video.mp4" type="video/mp4">
+    </video>
+    <form>
+      <div>
+        <label for="rating">Rating</label>
+        <input type="range" id="rating" name="rating" min="1" max="5" list="ratings">
+        <datalist id="ratings">
+          <option value="1" label="1"></option>
+          <option value="2" label="2"></option>
+          <option value="3" label="3"></option>
+          <option value="4" label="4"></option>
+          <option value="5" label="5"></option>
+        </datalist>
+      </div>
+      <button type="submit">Submit Rating</button>
+    </form>
+  </body>
+
+</html>
